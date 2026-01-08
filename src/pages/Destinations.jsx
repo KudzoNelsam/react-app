@@ -1,7 +1,7 @@
 function Destinations() {
   return (
     <>
-      <p>Destination</p>
+      <p>Destinations</p>
     </>
   );
 }

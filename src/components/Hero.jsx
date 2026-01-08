@@ -1,3 +1,6 @@
+import Liens from "./Liens/Liens";
+import Search from "./Search/Search";
+
 function Hero() {
   const title = <span className="uppercase">shipeasy</span>;
   return (
@@ -10,6 +13,8 @@ function Hero() {
         {title} connecte les clients avec des transporteurs GP de <br />
         confiance pour vos envois internationaux.
       </h3>
+      <Search />
+      <Liens />
     </div>
   );
 }

@@ -1,21 +1,29 @@
+import { Link } from "react-router-dom";
+
 export interface MenuProps {}
 
 function Menu({}: MenuProps) {
   return (
     <menu>
       <ul className="flex items-center space-x-6 text-sm font-medium">
-        <a href="" className="text-gray-600">
+        <Link to={{ pathname: "search" }} className="text-gray-600">
           <li>Rechercher un GP</li>
-        </a>
-        <a href="" className="text-gray-600">
+        </Link>
+        <Link to={{ pathname: "destinations" }} className="text-gray-600">
           <li>Destinations</li>
-        </a>
-        <a href="" className="">
+        </Link>
+        <Link
+          to={{ pathname: "login" }}
+          className="p-2 px-3 hover:bg-blue-500 transition-colors duration-100 rounded-lg hover:text-white text-blue-500"
+        >
           <li>Connexion</li>
-        </a>
-        <a href="" className="p-2 px-3 bg-gray-500 rounded-lg text-white">
+        </Link>
+        <Link
+          to={{ pathname: "register" }}
+          className="p-2 px-3 bg-blue-500 hover:bg-blue-600 transition-colors duration-100 rounded-lg text-white"
+        >
           <li>Créer un compte GP</li>
-        </a>
+        </Link>
       </ul>
     </menu>
   );
